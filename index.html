@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GastroSimplon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+
+    <header>
+        <div class="LogoHeader">
+            <div class="logo">
+                <img src="Assets/logoHeader.jpg" alt="Logo" width="100" height="100">
+            </div>
+            <div class="acceuil">
+                <button class="button" type="button">Accueil</button>
+            </div>
+            <div class="langueage">
+                <button class="button" type="button">FR</button>
+            </div>
+            <div class="reserv">
+                <button class="button" type="button">RESERVER</button>
+            </div>
+        </div>
+    </header>
+    <!-- Fin du Header -->
+
+    <div id="ImageContainer">
+        <img id="Image" src="Assets/Quiz-Les-plats-signatures-des-grands-chefs.jpg" alt="Image Plat">
+    </div>
+
+
+    <!-- Box Parent -->
+    <div class="boxlogo">
+
+        <!-- Box Logo / Enfant1-->
+        <div>
+            <img src="Assets/logoHeader.jpg" alt="Logo" height="300px" width="300px">
+        </div>
+        <!-- Box Adresse /Enfant2-->
+        <div>
+            <h1>Chez Simplon</h1>
+            <h3>Anse de Maldormé <br>
+                Corniche JF Kennedy <br>
+                17 rue des Braves13007 Marseille <br><br>
+                Tél : +33 (0)4 91 592 592 <br>
+                E-mail : contact@passedat.fr <br><br>
+            </h3>
+        </div>
+
+    </div>
+    <!-- Formulaire de Contact  -->
+    <div class="Contacteznous">
+        <h2>CONTACTEZ-NOUS</h2>
+        <p>INSCRIVEZ-VOUS À NOTRE NEWSLETTER POUR ÊTRE INFORMÉ DE NOS EVENEMENTS</p>
+        <form action="/page-traitement-donnees" method="post">
+            <div>
+                <label for="nom">Votre Nom</label>
+                <input type="text" id="nom" placeholder="Martin" required>
+            </div>
+            <div>
+                <label for="email">Votre E-Mail</label>
+                <input type="email" id="email" name="email" placeholder="monadressemail@mail.com" required>
+            </div>
+            <div>
+                <label for="sujet">Quel est le sujet de votre message ?</label>
+                <select name="sujet" id="sujet" required>
+                    <option value="" disabled hidden>Choisissez le sujet de votre message</option>
+                    <option value="Reservation-de-groupe">Réservation de Groupe</option>
+                    <option value="Reserver-le-Restaurant">Réserver le Restaurant</option>
+                    <option value="Vos-remarques-suggestions">Vos Remarques & Suggestions</option>
+                    <option value="Autres">Autres</option>
+                </select>
+            </div>
+            <div>
+                <label for="message">Votre Message</label>
+                <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car ....."
+                    required></textarea>
+            </div>
+            <div>
+                <button type="submit">Envoyer le message</button>
+            </div>
+        </form>
+    </div>
+    <div id="ConditionsFormulaire">
+        <p>J'accepte l'utilisation de mes données conformément aux CGU et à la Politique de Confidentialité.*</p>
+        <p>J'accepte l'envoi de communication (provenant exclusivement du Petit Nice Passédat).</p>
+    </div>
+    <div class="Footer">
+        <div id="LogoRond">
+            <img src="Assets/Ecotable-3.jpeg" alt="LogoEcotable" height="150px" width="150px">
+        </div>
+        <div id="LogoMichelin">
+            <img src="Assets/E-label1.png" alt="Logo Michelin" height="150px" width="150px">
+        </div>
+    </div>
+</body>
+
+</html>
