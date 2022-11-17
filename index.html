@@ -17,13 +17,9 @@
             <div class="logo">
                 <img src="Assets/logoHeader.jpg" alt="Logo" width="100" height="100">
             </div>
-            <div class="acceuil">
+            <div class="nav">
                 <button class="button" type="button">Accueil</button>
-            </div>
-            <div class="langueage">
                 <button class="button" type="button">FR</button>
-            </div>
-            <div class="reserv">
                 <button class="button" type="button">RESERVER</button>
             </div>
         </div>
@@ -40,7 +36,7 @@
 
         <!-- Box Logo / Enfant1-->
         <div>
-            <img src="Assets/logoHeader.jpg" alt="Logo" height="300px" width="300px">
+            <img src="Assets/logoHeader.jpg" alt="Logo">
         </div>
         <!-- Box Adresse /Enfant2-->
         <div>
@@ -55,38 +51,41 @@
 
     </div>
     <!-- Formulaire de Contact  -->
-    <div class="Contacteznous">
-        <h2>CONTACTEZ-NOUS</h2>
-        <p>INSCRIVEZ-VOUS À NOTRE NEWSLETTER POUR ÊTRE INFORMÉ DE NOS EVENEMENTS</p>
-        <form action="/page-traitement-donnees" method="post">
-            <div>
-                <label for="nom">Votre Nom</label>
-                <input type="text" id="nom" placeholder="Martin" required>
-            </div>
-            <div>
-                <label for="email">Votre E-Mail</label>
-                <input type="email" id="email" name="email" placeholder="monadressemail@mail.com" required>
-            </div>
-            <div>
-                <label for="sujet">Quel est le sujet de votre message ?</label>
-                <select name="sujet" id="sujet" required>
-                    <option value="" disabled hidden>Choisissez le sujet de votre message</option>
-                    <option value="Reservation-de-groupe">Réservation de Groupe</option>
-                    <option value="Reserver-le-Restaurant">Réserver le Restaurant</option>
-                    <option value="Vos-remarques-suggestions">Vos Remarques & Suggestions</option>
-                    <option value="Autres">Autres</option>
-                </select>
-            </div>
-            <div>
-                <label for="message">Votre Message</label>
-                <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car ....."
-                    required></textarea>
-            </div>
-            <div>
-                <button type="submit">Envoyer le message</button>
-            </div>
-        </form>
-    </div>
+    <section style="display: flex; justify-content: center;">
+        <div class="Contacteznous">
+            <h2>CONTACTEZ-NOUS</h2>
+            <p>INSCRIVEZ-VOUS À NOTRE NEWSLETTER POUR ÊTRE INFORMÉ DE NOS EVENEMENTS</p>
+            <form action="/page-traitement-donnees" method="post">
+                <div>
+                    <label for="nom">Votre Nom</label>
+                    <input type="text" id="nom" placeholder="Martin" required>
+                </div>
+                <div>
+                    <label for="email">Votre E-Mail</label>
+                    <input type="email" id="email" name="email" placeholder="monadressemail@mail.com" required>
+                </div>
+                <div>
+                    <label for="sujet">Quel est le sujet de votre message ?</label>
+                    <select name="sujet" id="sujet" required>
+                        <option value="" disabled hidden>Choisissez le sujet de votre message</option>
+                        <option value="Reservation-de-groupe">Réservation de Groupe</option>
+                        <option value="Reserver-le-Restaurant">Réserver le Restaurant</option>
+                        <option value="Vos-remarques-suggestions">Vos Remarques & Suggestions</option>
+                        <option value="Autres">Autres</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="message">Votre Message</label>
+                    <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car ....."
+                        required></textarea>
+                </div>
+                <div>
+                    <button type="submit">Envoyer le message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
     <div id="ConditionsFormulaire">
         <p>J'accepte l'utilisation de mes données conformément aux CGU et à la Politique de Confidentialité.*</p>
         <p>J'accepte l'envoi de communication (provenant exclusivement du Petit Nice Passédat).</p>

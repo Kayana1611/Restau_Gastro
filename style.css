@@ -9,23 +9,27 @@ body {
     width: 100%;
 }
 
-#header {
+header {
     background-color:#90D5FC;
     text-align: center;
 }
 
 .LogoHeader {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 0px;
-    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     background-color: #90D5FC;
 }
 
-.logo {
+.nav{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%
+ }
+
+/* .logo {
     grid-area: 1 / 1 / 2 / 2;
     margin-left: 20px;
     margin-top: 10px;
@@ -43,7 +47,7 @@ body {
 .reserv {
     grid-area: 1 / 4 / 2 / 5;
 
-}
+} */
 
 .button {
     background-color: white;
@@ -74,24 +78,32 @@ body {
 .boxlogo {
     display: flex;
     justify-content: space-around;
-    margin-top: 50px;
+    align-items: center;
+    margin: 50px 0;
 }
 
-.box div {
+.boxlogo img{
+    width: 30vw;
+}
+
+/* .box div {
     width: 600px;
     height: 600px;
-}
+} */
 
 .Contacteznous {
-    align-items: center;
-    margin-top: 50px;
-    margin-left: 25%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* margin-top: 50px; */
+    /* margin-left: 25%; */
     justify-content: center;
-    width: 700px;
+    width: 60vw;
     border: 1px solid;
     border-radius: 8px;
     padding: 0 50px 0 50px;
     background: white;
+
 }
 
 .Contacteznous>h2 {
@@ -160,9 +172,10 @@ form div:last-child {
 }
 
 form button {
-    width: 450px;
-    max-width: 500px;
-    height: 60px;
+    width: 50vw;
+    height: auto;
+    padding: 10px 0;
+    margin-bottom: 20px;
     font-weight: 700;
     font-size: 28px;
     background: white;
@@ -173,18 +186,17 @@ form button {
 }
  #ConditionsFormulaire {
     text-align: center;
-    margin-top: 50px;
+    margin: 50px;
  }
 
  .Footer {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 50px;
-    grid-row-gap: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100vw;
  }
 
- #LogoRond{
+ /* #LogoRond{
     grid-area: 1 / 1 / 2 / 2;
     margin: auto;
     margin-top: 50px;
@@ -196,4 +208,21 @@ form button {
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
+} */
+
+@media screen and (max-width:960px){
+    .nav{
+       flex-direction: column;
+       width: auto;
+       margin: 10px 0;
+    }
+
+    .nav button{
+        margin: 2px 0;
+    }
+
+    .Footer{
+        flex-direction: column;
+        align-items: center;
+    }
 }
